@@ -28,6 +28,8 @@ namespace OlusolaSurveyApp1.Models
 
         public DbSet<TodoItem> TodoItems { get; set; }
 
+        public DbSet<SurveyQuestions> SurveyQuestions { get; set; }
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Conventions.Add(

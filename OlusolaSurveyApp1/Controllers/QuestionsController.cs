@@ -12,6 +12,7 @@ namespace OlusolaSurveyApp1.Controllers
         protected override void Initialize(HttpControllerContext controllerContext)
         {
             base.Initialize(controllerContext);
+
             MobileServiceContext context = new MobileServiceContext();
             DomainManager = new EntityDomainManager<SurveyQuestions>(context, Request);
         }
